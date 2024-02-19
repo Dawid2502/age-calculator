@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="desktop-view">
+        <p class="birth-date-title">Podaj datę urodzenia</p>
+        <div class="birth-container">
+            <div class="birth-data">
+                <label for="day">Dzień</label>
+                <input type="number" name="day"
+                id="day">
+                <p class="error"></p>
+            </div>
+            <div class="birth-data">
+                <label for="month">Miesiąc</label>
+                <input type="number" name="month" id="month">
+                <p class="error"></p>
+            </div>
+            <div class="birth-data">
+                <label for="year">Rok</label>
+                <input type="number" name="year" id="year">
+                <p class="error"></p>
+            </div>
+        </div>
+        <div class="horizontal-line">
+            <button class="count-age-btn"><img class="down-arrow" src="./image/icon-arrow.svg" alt="Strzałka w dół"></button>
+        </div>
+        <p class="age-title">Twój wiek to:</p>
+        <div class="age-container">
+            <p><span class="age-years">--</span>Lat/-a</p>
+            <p><span class="age-months">--</span>Miesiące/-y</p>
+            <p><span class="age-days">--</span>Dni</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #787777;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.desktop-view {
+  width: 360px;
+  background-color: #b8b6b6;
+  border-radius: 20px;
+  border-bottom-right-radius: 150px;
+}
+
+.desktop-view .birth-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+}
+
+.desktop-view .birth-container .birth-data {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+}
+
+.desktop-view .birth-container .birth-data label {
+  padding: 5px 0;
+  color: grey;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.desktop-view .birth-container .birth-data input {
+  padding: 10px 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.desktop-view .birth-container .birth-data .error {
+  padding: 5px 0;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.desktop-view .horizontal-line {
+  position: relative;
+  height: 1px;
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color: rgb(167, 167, 167);
+}
+
+.desktop-view .horizontal-line button {
+  position: absolute;
+  right: 45%;
+  bottom: -25px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(10, 85, 91);
+  border-radius: 50%;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
+.desktop-view .horizontal-line button:hover {
+  background-color: black;
+}
+
+.desktop-view .age-title, .desktop-view .birth-date-title {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: rgb(10, 85, 91);
+  font-size: 18px;
+}
+
+.desktop-view .age-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 36px;
+}
+
+.desktop-view .age-container p {
+  padding: 5px;
+}
+
+.desktop-view .age-container p span {
+  padding: 0 5px;
+  color: rgb(10, 85, 91);
+}
+
+@media (min-width: 576px) {
+  .desktop-view {
+    width: 520px;
+  }
+
+  .desktop-view .birth-container {
+    height: 160px;
+    margin-left: 20px;
+  }
+
+  .desktop-view .birth-container .birth-data input {
+    width: 140px;
+    height: 50px;
+    font-size: 28px;
+  }
+
+  .desktop-view .birth-container .birth-data .error {
+    font-size: 12px;
+  }
+
+  .desktop-view .horizontal-line button {
+    right: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  .desktop-view .age-container {
+    font-size: 52px;
+  }
+}
+
+@media (min-width: 768px) {
+  .desktop-view {
+    width: 720px;
+  }
+
+  .desktop-view .birth-container {
+    height: 160px;
+    margin-left: 30px;
+  }
+
+  .desktop-view .birth-container .birth-data input {
+    width: 160px;
+    height: 65px;
+  }
+
+  .desktop-view .horizontal-line {
+    margin-left: 30px;
+  }
+
+  .desktop-view .horizontal-line button {
+    right: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  .desktop-view .age-container {
+    font-size: 64px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .desktop-view {
+    height: 610px;
+    width: 800px;
+  }
+
+  .desktop-view .birth-container {
+    width: 100%;
+    height: 180px;
+    margin-left: 30px;
+  }
+
+  .desktop-view .birth-container .birth-data input {
+    font-size: 36px;
+  }
+
+}
